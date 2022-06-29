@@ -1,0 +1,21 @@
+.header {
+    background: #2196F3;
+    margin-bottom: 50px;
+}
+.nav {
+    display: flex;
+}
+.nav a {
+    padding: 23px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.25px;
+    color: rgba(255, 255, 255, 0.7);
+}
+.active {
+    background-color: #1E88E5;
+    color: rgba(255, 255, 255, 1)
+}
