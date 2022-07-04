@@ -17,9 +17,8 @@ function App() {
     <div>
         <Header />
        <Routes >
-         <Route path="/" element={<Header />}/>
-         <Route path="/cats" element={<Cats />}/>
-         <Route path="/favorites" element={<Favorites />}/>
+         <Route path="/cats" element={<Cats/>}/>
+         <Route path="/favorites" element={<Favorites  />}/>
        </Routes>
     </div>
   );

@@ -84,7 +84,7 @@ img {
     transition: .8s;
 }
 .col-2:hover >.icon-container{
-    opacity:1;
+    opacity: 1;
 }
 .col-2:hover >.cats-img{
      background-color: rgba(0,0,0,0.5);
@@ -92,6 +92,17 @@ img {
 }
 .icon-container:hover {
   background: url("./assets/images/coloredHeart.svg");
+  transition: .8s;
+}
+.icon-container-favorite{
+    cursor: pointer;
+    background: url("./assets/images/coloredHeart.svg");
+    width: 40px;
+    height: 36px ;
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    transition: .8s;
 }
 
 
