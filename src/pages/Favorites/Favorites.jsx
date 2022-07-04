@@ -16,7 +16,7 @@ const Favorites = () => {
                     favorites.length?
                         favorites?.map((cat) => (
                            <CatCard cat={cat} action={removeFavorite} isFavorite={true} />
-                        )):"Нет любимых котов"
+                        )):<div className="message-favorite">Нет любимых котиков</div>
                 }
             </div>
 

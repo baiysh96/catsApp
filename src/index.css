@@ -104,7 +104,11 @@ img {
     bottom: 30px;
     transition: .8s;
 }
-
+.message-favorite {
+    margin-left: 50px;
+    font-size: 16px;
+    text-align: center;
+}
 
 
 /*****************?******?*********Media queries************/
