@@ -9,9 +9,9 @@ switch (action.type){
     case 'ADD_TO_FAVORITES':
          return  {...state, favorites:[...state.favorites,action.payload]}
     case 'REMOVE_FROM_FAVORITES':
-        let newState = state.favorites.filter((favorite,idx) => {
-            return action.payload !== idx;
-        });
+        let newState = state.favorites.filter(favorite => {
+            return action.payload.id !== favorite.id;
+        })
 
         return {
             ...state,

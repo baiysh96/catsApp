@@ -1,6 +1,7 @@
 
 import {useDispatch, useSelector} from "react-redux";
 import 'react-toastify/dist/ReactToastify.css';
+import CatCard from "../../components/CatCard";
 
 const Favorites = () => {
     const dispatch = useDispatch()
@@ -12,12 +13,10 @@ const Favorites = () => {
         <div className="container">
             <div className="row">
                 {
-                    favorites?.map((cat,index) => (
-                        <div className="col-2" key={index}>
-                            <img className="cats-img" src={cat.url} alt="cat" height="300" width="300"/>
-                            <div className="icon-container" onClick={() => removeFavorite(index)}/>
-                        </div>
-                    ))
+                    favorites.length?
+                        favorites?.map((cat) => (
+                           <CatCard cat={cat} action={removeFavorite} isFavorite={true} />
+                        )):"Нет любимых котов"
                 }
             </div>
 
