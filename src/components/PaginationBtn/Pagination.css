@@ -1,17 +1,7 @@
 .pagination {
     margin: 30px 0;
 }
-.pagination-btn {
-    width: 40px;
-    margin: 0 5px 8px;
-    cursor: pointer;
-    border-radius: 50%;
-    border: none;
-    color: white;
-    padding: 10px 10px;
-    background-color: #2196F3;
-    transition: .6s;
-}
+
 .active {
     background-color: rgba(30, 136, 229, 0.6);
     color: black;

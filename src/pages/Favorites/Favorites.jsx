@@ -14,7 +14,7 @@ const Favorites = () => {
             <div className="row">
                 {
                     favorites.length?
-                        favorites?.map((cat) => (
+                        favorites.map((cat) => (
                            <CatCard cat={cat} action={removeFavorite} isFavorite={true} />
                         )):<div className="message-favorite">Нет любимых котиков</div>
                 }

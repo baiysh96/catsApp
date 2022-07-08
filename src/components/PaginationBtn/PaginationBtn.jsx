@@ -1,21 +1,19 @@
 import React from 'react';
 import "./Pagination.css"
-const PaginationBtn = ({setPage}) => {
-    const handleClick = (e,idx) => {
+import Pagination from '@mui/material/Pagination';
 
-        setPage(idx)
-    }
+const PaginationBtn = ({setPage,paginationCount,limit,page}) => {
+    const totalPages = Math.floor(paginationCount / limit);
+    let hover = "#00FFFF"
     return (
         <div className="pagination">
-            {
-                Array(Math.ceil(10)).fill(0).map((buttonNum, idx) => (
-                    <button onClick={(e) => handleClick(e,idx)}
-                            className="pagination-btn"
-                            key={idx}>
-                         {idx + 1}
-                    </button>
-                ))
-            }
+            <Pagination
+                count={totalPages}
+                page={page}
+                color="primary"
+                hover={hover}
+                onChange={(_,num) => setPage(num)}
+            />
         </div>
     );
 };

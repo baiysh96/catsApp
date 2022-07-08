@@ -110,7 +110,18 @@ img {
     text-align: center;
 }
 
-
+.paginate {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.limits-form {
+    width: 100px;
+    height: 40px;
+}
+#limits {
+    font-size: 16px;
+}
 /*****************?******?*********Media queries************/
 @media (max-width: 1316px) {
     .container {
